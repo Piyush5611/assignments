@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-label="Hero Illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="100%" stop-color="#f7f1ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d6efd"/>
+      <stop offset="100%" stop-color="#6f42c1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <g transform="translate(120 60)">
+    <rect x="0" y="40" width="560" height="280" rx="16" fill="#fff" stroke="#e5e7eb"/>
+    <rect x="24" y="72" width="240" height="16" rx="8" fill="#e9ecef"/>
+    <rect x="24" y="104" width="320" height="12" rx="6" fill="#e9ecef"/>
+    <rect x="24" y="130" width="280" height="12" rx="6" fill="#e9ecef"/>
+    <rect x="24" y="156" width="300" height="12" rx="6" fill="#e9ecef"/>
+    <circle cx="420" cy="160" r="60" fill="url(#accent)" opacity="0.15"/>
+    <circle cx="520" cy="220" r="40" fill="url(#accent)" opacity="0.25"/>
+    <path d="M420 120l60 34-60 34-60-34z" fill="url(#accent)"/>
+  </g>
+</svg>

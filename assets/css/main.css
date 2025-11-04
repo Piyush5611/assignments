@@ -1,0 +1,5 @@
+/* Compiled placeholder CSS - edit SCSS in assets/scss and run npm scripts to rebuild */
+body{min-height:100vh;display:flex;flex-direction:column}
+section.bg-light{background-image:radial-gradient(ellipse at top right,rgba(13,110,253,.08),transparent 40%),radial-gradient(ellipse at bottom left,rgba(111,66,193,.08),transparent 40%)}
+.card{border:none}
+footer{margin-top:auto}

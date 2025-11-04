@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Node / Composer
+node_modules/
+vendor/
+
+# PHP / Project
+/.env
+/.env.*
+composer.lock
+
+# Frontend build artifacts
+assets/css/*.map

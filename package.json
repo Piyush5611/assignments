@@ -1,0 +1,15 @@
+{
+  "name": "college-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bootstrap scaffold for a college website with SCSS tooling.",
+  "scripts": {
+    "scss:watch": "sass --watch assets/scss:assets/css",
+    "scss:build": "sass --style=compressed assets/scss:assets/css",
+    "build": "npm run scss:build",
+    "dev": "npm run scss:watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

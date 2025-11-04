@@ -1,0 +1,20 @@
+# Basic .htaccess for a PHP site
+# Security and defaults
+Options -Indexes
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Force trailing slash removal
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Route non-file requests to index.php (optional)
+  # Uncomment the following if you plan to implement front-controller routing later
+  # RewriteCond %{REQUEST_FILENAME} !-f
+  # RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# Serve correct types for SVG
+AddType image/svg+xml .svg .svgz
+AddEncoding gzip .svgz
