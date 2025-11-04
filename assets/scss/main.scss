@@ -1,0 +1,25 @@
+// Main SCSS for the site
+$primary: #0d6efd;
+$secondary: #6c757d;
+$light: #f8f9fa;
+$dark: #212529;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Hero tweaks
+section.bg-light {
+  background-image: radial-gradient(ellipse at top right, rgba(13,110,253,0.08), transparent 40%),
+                    radial-gradient(ellipse at bottom left, rgba(111,66,193,0.08), transparent 40%);
+}
+
+.card {
+  border: none;
+}
+
+footer {
+  margin-top: auto;
+}
