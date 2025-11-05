@@ -76,11 +76,11 @@ if (class_exists('PHPMailer\\PHPMailer\\PHPMailer')) {
 }
 
 if ($sent) {
-    $_SESSION['flash'] = ['type' => 'success', 'message' => 'Thanks! Your message has been sent.'];
+    $_SESSION['flash'] = ['type' => 'success', 'message' => 'Thank you for your message! We will get back to you soon.'];
+    header('Location: ' . asset('/contact-success.php'));
 } else {
-    $msg = 'Message failed to send.' . ($error ? ' ' . $error : '');
+    $msg = 'Message failed to send.' . ($error ? ' Error: ' . $error : '');
     $_SESSION['flash'] = ['type' => 'danger', 'message' => $msg];
+    header('Location: ' . asset('/contact.php'));
 }
-
-header('Location: ' . asset('/contact.php'));
 exit;

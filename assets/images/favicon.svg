@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d1ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1b3358"/>
+  
+  <!-- Graduation cap symbol -->
+  <path d="M16 8 L8 14 L24 14 L16 10 Z" fill="#00d1ff"/>
+  <ellipse cx="16" cy="8" rx="5" ry="2" fill="#00d1ff"/>
+  
+  <!-- Tassel -->
+  <line x1="16" y1="8" x2="16" y2="6" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="16" cy="6" r="1" fill="#ffffff"/>
+</svg>
