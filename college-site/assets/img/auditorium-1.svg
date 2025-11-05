@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aubg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b263b"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#aubg)"/>
+  <g fill="#415a77" opacity="0.8">
+    <rect x="200" y="500" width="800" height="120" rx="24"/>
+    <circle cx="400" cy="480" r="80"/>
+    <circle cx="600" cy="480" r="80"/>
+    <circle cx="800" cy="480" r="80"/>
+  </g>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#e0e1dd" font-family="Poppins, Arial, sans-serif" font-size="48">Auditorium</text>
+</svg>

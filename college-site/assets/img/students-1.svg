@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#415a77"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#stbg)"/>
+  <g fill="#e0e1dd" opacity="0.85">
+    <circle cx="400" cy="420" r="80"/>
+    <rect x="340" y="500" width="120" height="120" rx="20"/>
+    <circle cx="800" cy="420" r="80"/>
+    <rect x="740" y="500" width="120" height="120" rx="20"/>
+  </g>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#0d1b2a" font-family="Poppins, Arial, sans-serif" font-size="48" opacity="0.85">Students</text>
+</svg>
