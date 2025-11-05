@@ -1,0 +1,157 @@
+/*
+Theme: Dark Blue College Site
+Author: cto.new task
+Description: Minimal custom styles layered on top of Bootstrap 5 for a dark blue palette. Organized with CSS variables.
+*/
+
+:root {
+  --c-primary: #0d1b2a;       /* dark blue */
+  --c-primary-600: #1b263b;   /* slightly lighter */
+  --c-primary-500: #243b53;   /* mids */
+  --c-primary-400: #415a77;   /* accent */
+  --c-primary-300: #778da9;   /* light accent */
+  --c-text: #e0e1dd;          /* light text */
+  --c-muted: #cfd4da;         /* muted text */
+  --c-bg: #0a1624;            /* page background */
+  --c-surface: #0f2134;       /* cards/nav surfaces */
+
+  /* Override a few Bootstrap CSS variables */
+  --bs-primary: var(--c-primary);
+  --bs-body-color: var(--c-text);
+  --bs-body-bg: var(--c-bg);
+  --bs-link-color: var(--c-primary-300);
+  --bs-link-hover-color: #a9bfd6;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* Skip link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--c-primary-400);
+  color: #fff;
+  padding: .5rem 1rem;
+  z-index: 1050;
+  transition: top .2s ease-in-out;
+}
+.skip-to-content:focus { top: 0; }
+
+/* Navbar */
+.navbar {
+  background-color: var(--c-primary-600) !important;
+}
+.navbar .navbar-brand img {
+  height: 32px;
+  width: auto;
+}
+.navbar .nav-link { color: #e6edf3; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: #fff; }
+.navbar .nav-link.active, .navbar .nav-link[aria-current="page"] {
+  color: #fff;
+  font-weight: 600;
+}
+.header-shadow {
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,.25);
+}
+
+/* Hero */
+.hero {
+  background: radial-gradient(80% 120% at 30% 10%, rgba(65,90,119,.35) 0%, rgba(13,27,42,0) 60%),
+              linear-gradient(180deg, var(--c-primary-600), var(--c-primary));
+  color: #fff;
+  padding: 5rem 0 4rem;
+}
+.hero .lead { color: #e6edf3; }
+
+/* Section utilities */
+.section {
+  padding: 4rem 0;
+}
+.section-title {
+  margin-bottom: 2rem;
+}
+.section-accent {
+  background: linear-gradient(180deg, var(--c-surface), rgba(15,33,52,.6));
+}
+
+/* Cards on dark */
+.card.dark {
+  background-color: var(--c-surface);
+  color: var(--c-text);
+  border: 1px solid rgba(119,141,169,.25);
+}
+.card.dark .card-title { color: #fff; }
+.card.dark .card-text { color: #dbe3ea; }
+
+/* Stats */
+.stat {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(119,141,169,.2);
+  border-radius: .5rem;
+}
+.stat .value { font-size: 2rem; font-weight: 700; color: #fff; }
+.stat .label { color: var(--c-muted); }
+
+/* Footer */
+.footer {
+  background-color: var(--c-primary);
+  color: var(--c-text);
+}
+.footer a { color: var(--c-primary-300); }
+.footer a:hover { color: #fff; }
+.footer .social a { font-size: 1.25rem; margin-right: .75rem; }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--c-primary-400);
+  border-color: var(--c-primary-400);
+}
+.btn-primary:hover, .btn-primary:focus { background-color: #3a526c; border-color: #3a526c; }
+.btn-outline-light { border-color: rgba(255,255,255,.65); }
+
+/* Forms */
+.form-control, .form-select {
+  background-color: #0e2032;
+  border-color: rgba(119,141,169,.3);
+  color: var(--c-text);
+}
+.form-control:focus, .form-select:focus {
+  background-color: #12273c;
+  border-color: var(--c-primary-300);
+  box-shadow: 0 0 0 .25rem rgba(119,141,169,.25);
+}
+.form-text, .form-label { color: var(--c-muted); }
+.invalid-feedback { color: #f4b4b4; }
+
+/* Lightbox thumbnails */
+.gallery-thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: .5rem;
+  border: 1px solid rgba(119,141,169,.2);
+}
+.gallery-thumb img { transition: transform .3s ease; display: block; }
+.gallery-thumb:hover img { transform: scale(1.04); }
+
+/* Utility */
+.rounded-4 { border-radius: 1rem !important; }
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+  .hero { padding: 6rem 0 5rem; }
+}
